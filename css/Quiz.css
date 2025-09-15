@@ -20,10 +20,11 @@ body {
 
 /* Estilo dos cards */
 .quiz-options {
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    display: flex;
+    margin-inline: 100px;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 .card {
@@ -36,6 +37,8 @@ body {
     cursor: pointer;
     border: 2px solid white;
     align-items: center;
+    max-height: 507.03px;
+    max-width: 288.78px;
 }
 
 

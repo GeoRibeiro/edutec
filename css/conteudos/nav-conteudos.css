@@ -5,7 +5,8 @@ body{
     background-size: cover;
     color: var(--branco);
     text-align: center;
-    height: 120vh;
+    height: 100vh;
+    
 
     h2{
         margin-top: 0.938rem;
@@ -15,26 +16,30 @@ body{
 
 
 
+
+
   main h2, .titulo-conteudos {
     margin: 2rem 0;
     font-size: 2.8rem;
     font-weight: bold;
     text-align: center;
     text-shadow: 3px 3px 8px #0a3365;
+    text-shadow: 0.313rem 0.313rem 0.681rem var(--azul-claro);
   }
- 
   
+ 
   .cards {
-    background-color: rgba(0, 0, 0, 0.171);
-   /* filter: blur(5px);*/
-    
-    margin-top: 5rem;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    bottom: 15%; /* Posiciona na parte inferior da abertura da caverna */
+    transform: translateX(50%);
+    width: 60%;
+    margin-left: -20rem;
     gap: 1rem;
+    left: 0;
     max-width: 1200px;
-    margin: 0 auto;
+    z-index: 10;
+    border-radius: 1rem;
+    padding: 3rem;
+    background-color: rgba(0, 0, 0, 0.322);
   }
   
   .cards .siema {
@@ -44,6 +49,8 @@ body{
   
   
   .cards img {
+
+    position: relative;
     display: block;
     margin: 0 auto; 
     width: 260px;
@@ -56,59 +63,39 @@ body{
     transform: scale(1.05);
   }
   
-  .cards p {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: bold;
-    background: rgba(0,0,0,0.6);
-    padding: 0.5rem;
-    border-radius: 0 0 6px 6px;
-  }
-  
 
-.botão-pass {
-
-  align-items: flex-end;
-
-
+.prev, .next { 
+  border: none;
+  background: var(--azul-highlight);
+  box-shadow: 2px 0px 24.7px -1px #1091FA;
+  color: var(--branco);
+  text-align: center;
+  font-size: 1.75rem;
+  width: 3.313rem;
+  height: 2.875rem;
+  margin-bottom: 1.5rem;
 }
-
-
-  .prev, .next {
-   
-    
-    display: flex;
-    justify-content: center;
-    border: none;
-    background: #A2CFF8;
-    color: white;
-    font-size: 1.5rem;
-    margin: 2rem 1.9rem;
-    padding: 1.5rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: 0.3s;
-    margin-left: 98.5rem;
-  }
   
   .prev:hover, .next:hover {
     background: #01345e;
-  
+    transition: .3s;
+    cursor: pointer;
   }
   
   
   .desc {
-    border-color: #0A3365;
- 
-    background: rgba(0, 0, 0, 0.116);
+    border-left: 2px #0A3365 solid;
     max-width: 350px;
-    padding: 1rem;
-    border-radius: 6px;
-    margin-left: 93.5rem;
-    text-align: left; 
+    text-align: left;
+    width: 50%; 
+    padding-left: 1rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-bottom: 49px;
+    div{
+      display: flex;
+      gap: 1rem;
+    }
   }
   
   .desc h4 {
@@ -117,20 +104,36 @@ body{
   }
   
   .desc p {
-    color: #c9c6c6;
+    color: rgb(255, 255, 255);
     margin: 0.5rem 0 1rem;
     font-size: 0.95rem;
     line-height: 1.5rem;
   }
   
   .desc a {
-    color: #ffffff;
+    font-size: 1.25rem;
+    font-family: "Poppins", serif;
     font-weight: bold;
-    text-decoration: none;
+    color: white;
   }
   
   .desc a:hover {
     text-decoration: underline;
+    color: var(--azul-claro);
+    text-shadow: 0.313rem 0.313rem 0.681rem var(--azul-highlight);
   }
   
 
+footer {  
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+
+.tudinho {
+  margin-top: 300px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 50px;
+}

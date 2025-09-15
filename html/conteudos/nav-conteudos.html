@@ -7,70 +7,48 @@
     <script src="/js/siema.min.js" defer></script>
     <script src="/main.js/nav.js" defer></script>
     
-
-
     <title>Navegação do conteudos</title>
 </head>
 <body>
     <header>
         <nav>
             <a href="/index.html"><img src="/assets/logo-site.svg" alt="Logo do site AquaWhale"></a>
-            <a href="/html/conteudos/nav-conteudos.html" class="on">Explore os conteúdos</a>
+            <a href="/html/conteudos/nav-conteudos.html">Explore os conteúdos</a>
             <a href="/html/Quiz/Quiz-inicio.html">Quiz</a>
-            <a href="/html/ONG.html">ONGs</a>
+            <a href="/html/ONG's.html">ONGs</a>
             <a href="/index.html#sobre">Sobre Nós</a>
         </nav>
     </header>
 
-        <main>        
-<div class="TudoJunto">
-
+    <main>
+        <h2>Conteúdos</h2>     
+        <div class="tudinho">
             <div class="cards">
-            <div class="siema">
-                <div><img src="/assets/cont-imagens/nav-imgs/nav-Curios.svg" alt=""></div>
-                <div><img src="/assets/cont-imagens/nav-imgs/nav-Coral.svg" alt=""></div>
-                <div><img src="/assets/cont-imagens/nav-imgs/Nav-biolumi.svg" alt=""></div>
-                <div><img src="/assets/cont-imagens/nav-imgs/nav-algas.svg" alt=""></div>
-                <div><img src="/assets/cont-imagens/nav-imgs/nav-oceano.svg" alt=""></div>
-              </div>
-
-            </div>
-
-              <div class="parteMenor">
-
-              </div>
-              <div class="botão-pass">
-              <button class="prev"> <- </button>
-              <button class="next">-></button>
+                    <div class="siema">
+                        <div> <a href="/html/conteudos/curiosidades.html"><img src="/assets/cont-imagens/nav-imgs/nav-Curios.svg" alt=""></a></div>
+                        <div><a href="/html/conteudos/recifeCorais.html"><img src="/assets/cont-imagens/nav-imgs/nav-Coral.svg" alt=""></a></div>
+                        <div> <a href="/html/conteudos/biolumi.html"><img src="/assets/cont-imagens/nav-imgs/Nav-biolumi.svg" alt=""></a></div>
+                        <div> <a href="/html/conteudos/algas&planctons.html"><img src="/assets/cont-imagens/nav-imgs/nav-algas.svg" alt=""></a></div>
+                        <div> <a href="/html/conteudos/oceanografia.html"><img src="/assets/cont-imagens/nav-imgs/nav-oceano.svg" alt=""></a></div>
+                    </div>
             </div>
               
-              <script src="https://unpkg.com/siema@latest/dist/siema.min.js"></script>
-              <script>
-                const mySiema = new Siema({ 
-                
-                    perPage: 3,
-                    duration: 300,
-                
-                });
               
-                document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
-                document.querySelector('.next').addEventListener('click', () => mySiema.next());
-              </script>
               
-</div>
-
-
-
+                
                 <div class="desc">
-    
+                    <div>
+                        <button class="prev"><i class="ph ph-arrow-left"></i></button>
+                        <button class="next"><i class="ph ph-arrow-right"></i></button>
+                    </div>
                     <h4>Oceanografia</h4>
                     <p>Oceanografia é a ciência que estuda os oceanos, suas águas, correntes, vida marinha e o fundo do mar. Ela ajuda a entender o papel dos oceanos no clima e na vida do planeta.</p>
                     <a href="./oceanografia.html">Saber mais</a>
                 </div>
-            </div>
-        </main>
-    </div>
+        </div>
+    </main>
 
+ 
     <footer>
         <img src="/assets/logo-site.svg" alt="Logo do site AquaWhale">
         <p>Este site é para fins educativos, com o conceito de dar visibilidade a vida marinha neste mundo, para obterem uma visão sobre a Biologia Marinha.</p>
@@ -82,5 +60,19 @@
                 <button><a href="#"><i class="ph ph-instagram-logo"></i></a></button>
         </div>
     </footer>
+
+
+    <script src="https://unpkg.com/siema@latest/dist/siema.min.js"></script>
+    <script>
+        const mySiema = new Siema({ 
+        
+            perPage: 3,
+            duration: 300,
+        
+        });
+      
+        document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
+        document.querySelector('.next').addEventListener('click', () => mySiema.next());
+      </script>
 </body>
 </html>
