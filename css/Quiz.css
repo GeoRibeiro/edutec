@@ -332,8 +332,10 @@ body {
 }
 
 .result-left {
-    background:var(--azul-escuro);
-    opacity: 0.8;
+    background: linear-gradient(360deg, rgba(0, 40, 80, 0.71) 7.73%, rgba(0, 51, 102, 0.71) 57.13%, rgba(0, 102, 204, 0.71) 89.48%);
+    border-radius: 0 2rem 2rem 0;
+    box-shadow: 0px 4px 65px 6px #000000;
+    background: opacity;
 }
 
 .result-left h2 {
@@ -377,7 +379,7 @@ body {
     opacity: 0.8;
 }
 
-.retry-btn {
+.retry-btn, #ranking {
     padding: 1rem 2rem;
     background: var(--azul-claro);
     color: var(--branco);
@@ -388,6 +390,10 @@ body {
     transition: background 0.3s, box-shadow 0.3s;
     box-shadow: 0 0 10px rgba(16, 145, 250, 0.5);
     box-shadow: 0.313rem 0.313rem 1.563rem -0.125rem var(--azul-claro), inset 100px 0px 50px #000923;
+}
+
+#ranking{
+    margin-top: 1.625rem;
 }
 
 .retry-btn:hover {

@@ -9,14 +9,21 @@
 </head>
 <body class="quiz-page-body">
   <header>
-      <nav>
-          <a href="/index.html"><img src="/assets/logo-site.svg" alt="Logo do site AquaWhale"></a>
-          <a href="/html/conteudos/nav-conteudos.html">Explore os conteúdos</a>
-          <a href="/html/Quiz/Quiz-inicio.html">Quiz</a>
-          <a href="/html/ONG.html">ONGs</a>
-          <a href="/index.html#sobre">Sobre Nós</a>
-      </nav>
-  </header>
+        <nav>
+            <div>
+                <a href="/index.html"><img src="/assets/logo-site.svg" id="logo" alt="Logo do site AquaWhale"></a>
+                <a href="/html/conteudos/nav-conteudos.html">Explore os conteúdos</a>
+                <a href="/html/Quiz/Quiz-inicio.html">Quiz</a>
+                <a href="/html/ONG.html">ONGs</a>
+                <a href="/index.html#sobre">Sobre Nós</a>
+            </div>
+            <div class="login-cad">
+            <a href="/login-cad/login.html">Entrar</a>
+            <a href="/login-cad/cadastro.html">Cadastrar</a>
+            <a href="/login-cad/login.html"><img src="/assets/login-cadastrp/user.svg" alt="Imagem de usuário não cadastrado"></a>
+            </div>
+        </nav>
+    </header>
  
 
   <main class="result-modal-container">
@@ -37,6 +44,7 @@
         <button class="retry-btn" onclick="window.location.href='Quiz-inicio.html'">
           Tente novamente
         </button>
+        <a href="/ranking.html" id="ranking">Ver o ranking</a>
       </div>
     </div>
   </main>
