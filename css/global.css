@@ -85,12 +85,32 @@ header{
             justify-content: space-between;
             align-items: center;
         }
-        .login-cad{
+        .login-cad, .logado{
             position: absolute;
             right: 0;
         }
-        a:hover,
-        a:focus{
+        .logado{
+            display: flex;
+            gap: 2.125rem;
+            margin-right: 1.938rem;
+            .usuario{
+                border-right: 2px solid white;
+                padding-right: 1.688rem;
+                img{
+                    margin-right: 0.938rem;
+                }
+            }
+            a{
+                padding: 0;
+            }
+            a:hover{
+                text-decoration: none;
+            }
+            i{
+                font-size: 1.5rem;
+            }
+        }
+        a:hover{
             transition-duration: 0.3s;
             color: var(--azul-claro);
             text-decoration: underline;
