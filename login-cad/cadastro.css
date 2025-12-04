@@ -45,7 +45,7 @@ section{
                 background: none;
                 border: none;
             }
-            #conf-senha{
+            #confirm_password{
                 width: 21rem;
             }
         }
